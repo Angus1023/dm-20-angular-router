@@ -1,0 +1,12 @@
+<h1>Roster</h1>
+
+<div ng-repeat="player in players">
+  <img src="{{player.image}}" />
+  <h5><a ui-sref="about({id: player.id})">{{player.name}}</a></h5>
+</div>
+
+<style>
+  img {
+    height: 200px;
+  }
+</style>
